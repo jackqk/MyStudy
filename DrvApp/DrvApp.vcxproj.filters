@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{22f41999-f11e-4745-ae32-d9774a95c496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\1.Driver&amp;Device">
+      <UniqueIdentifier>{6bf33dfa-d0f5-45d0-9f0d-95a6accfd43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\4.Cpp&amp;Stl">
+      <UniqueIdentifier>{9affbd7a-0621-4774-ab6d-fe0e2dd4b03c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\2.NetWork\Wsk">
+      <UniqueIdentifier>{07947669-5f91-4905-8d40-9cecee603aa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\2.NetWork">
+      <UniqueIdentifier>{cb368784-b703-4493-afaf-d8a5c1759e9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FilterEngine\MyFltCode">
+      <UniqueIdentifier>{4b0de0e2-528d-4d40-a065-aac31d450da8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FilterEngine">
+      <UniqueIdentifier>{472f1772-6fb0-427d-a920-5b47fa69e648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InjectionEngine">
+      <UniqueIdentifier>{70ae4f4b-4abb-4363-bc0b-3ad6476f6d81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\1.Callback">
+      <UniqueIdentifier>{811823ae-5824-4c9b-ba38-370aef93aa5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\2.Dpc">
+      <UniqueIdentifier>{3edb58c6-6103-47ea-a27b-6b2247a2b602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\2.File">
+      <UniqueIdentifier>{602bf61e-9672-467f-a831-862c04b7cd40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\2.Reg">
+      <UniqueIdentifier>{5d26f4d7-9b73-4f64-b27f-1628b631de75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\2.Thread">
+      <UniqueIdentifier>{b55b646e-a21e-4718-a43d-f3dbf95514af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\2.Timer">
+      <UniqueIdentifier>{fdccd978-db23-4081-aefe-468b98ddf80a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\2.WorkItem">
+      <UniqueIdentifier>{8698e23d-5ccf-4f8d-b773-18d46b49de3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\3.Log">
+      <UniqueIdentifier>{183fa756-fcba-457d-80c2-105912d684de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\3.Synchronization">
+      <UniqueIdentifier>{4cd013b5-8bc8-4ad0-aeb7-6b535cd67d76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\3.Synchronization\event">
+      <UniqueIdentifier>{7b47a718-b8bb-4ee4-b369-3fb54960eb00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\3.Utils">
+      <UniqueIdentifier>{0e216f5a-905c-4254-998a-be473cb752ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\4.Win_head">
+      <UniqueIdentifier>{fe32460e-7f34-4604-b016-1153b952c287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\2.Process">
+      <UniqueIdentifier>{5a4029d1-0260-411b-bbbc-8065699c4472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FilterEngine\MiniFilter">
+      <UniqueIdentifier>{434df7c9-942b-4242-b81f-c6349f89a8a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\2.NetWork\Http">
+      <UniqueIdentifier>{44d857fe-b1f3-43ac-a94a-067aab25c8f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\CommSyscall.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\1.Driver&amp;Device\DriverEntry.cpp">
+      <Filter>Common\1.Driver&amp;Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\4.Cpp&amp;Stl\kernel_stl.cpp">
+      <Filter>Common\4.Cpp&amp;Stl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\4.Cpp&amp;Stl\stdcpp.cpp">
+      <Filter>Common\4.Cpp&amp;Stl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\4.Cpp&amp;Stl\typeinfo.cpp">
+      <Filter>Common\4.Cpp&amp;Stl</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\2.NetWork\Wsk\WskSocket.cpp">
+      <Filter>Common\2.NetWork\Wsk</Filter>
+    </ClCompile>
+    <ClCompile Include="FilterEngine\MyFltCode\FltEntry.cpp">
+      <Filter>FilterEngine\MyFltCode</Filter>
+    </ClCompile>
+    <ClCompile Include="InjectionEngine\PayLoad.cpp">
+      <Filter>InjectionEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="DispatchRoutine.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="FilterEngine\MiniFilter\BaseMiniFlt.cpp">
+      <Filter>FilterEngine\MiniFilter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\CommHeader.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CommGlobal.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CommLib.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CommSyscall.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\1.Driver&amp;Device\CDevice.h">
+      <Filter>Common\1.Driver&amp;Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\1.Driver&amp;Device\CDriver.h">
+      <Filter>Common\1.Driver&amp;Device</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Cpp&amp;Stl\kernel_stl.h">
+      <Filter>Common\4.Cpp&amp;Stl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Cpp&amp;Stl\scope_exit.h">
+      <Filter>Common\4.Cpp&amp;Stl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Cpp&amp;Stl\SingleTon.h">
+      <Filter>Common\4.Cpp&amp;Stl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Cpp&amp;Stl\stdcpp.h">
+      <Filter>Common\4.Cpp&amp;Stl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Cpp&amp;Stl\unique_resource.h">
+      <Filter>Common\4.Cpp&amp;Stl</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2.NetWork\Wsk\UdpClient.h">
+      <Filter>Common\2.NetWork\Wsk</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2.NetWork\Wsk\WskSocket.h">
+      <Filter>Common\2.NetWork\Wsk</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\1.Callback\CExCallback.h">
+      <Filter>Common\1.Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\1.Callback\CImageCallback.h">
+      <Filter>Common\1.Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\1.Callback\CObjectCallback.h">
+      <Filter>Common\1.Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\1.Callback\CPnpCallback.h">
+      <Filter>Common\1.Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\1.Callback\CPowerCallback.h">
+      <Filter>Common\1.Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\1.Callback\CProcessCallback.h">
+      <Filter>Common\1.Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\1.Callback\CRegCallback.h">
+      <Filter>Common\1.Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\1.Callback\CSystemTimeCallback.h">
+      <Filter>Common\1.Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\1.Callback\CThreadCallback.h">
+      <Filter>Common\1.Callback</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2.Dpc\CDpc.h">
+      <Filter>Common\2.Dpc</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2.File\CFile.h">
+      <Filter>Common\2.File</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2.Reg\CReg.h">
+      <Filter>Common\2.Reg</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2.Thread\CThread.h">
+      <Filter>Common\2.Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2.Thread\CThreadPlus.h">
+      <Filter>Common\2.Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2.Timer\CTimer.h">
+      <Filter>Common\2.Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2.WorkItem\CWorkItem.h">
+      <Filter>Common\2.WorkItem</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Log\StatusInfo.h">
+      <Filter>Common\3.Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Synchronization\CCpuLock.h">
+      <Filter>Common\3.Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Synchronization\CFGLock.h">
+      <Filter>Common\3.Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Synchronization\CMutex.h">
+      <Filter>Common\3.Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Synchronization\CPushLock.h">
+      <Filter>Common\3.Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Synchronization\CRundownProtect.h">
+      <Filter>Common\3.Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Synchronization\CRWLock.h">
+      <Filter>Common\3.Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Synchronization\CSpinLock.h">
+      <Filter>Common\3.Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Synchronization\CSpinLockMutex.h">
+      <Filter>Common\3.Synchronization</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Synchronization\event\CEvent.h">
+      <Filter>Common\3.Synchronization\event</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Synchronization\event\CKevent.h">
+      <Filter>Common\3.Synchronization\event</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Utils\CommonUtil.h">
+      <Filter>Common\3.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Utils\DbgUtil.h">
+      <Filter>Common\3.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Utils\GuidUtil.h">
+      <Filter>Common\3.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Utils\MemUtil.h">
+      <Filter>Common\3.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Utils\OsVerUtil.h">
+      <Filter>Common\3.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Utils\PathUtil.h">
+      <Filter>Common\3.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Utils\PEUtil.h">
+      <Filter>Common\3.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Utils\TimeUtil.h">
+      <Filter>Common\3.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\3.Utils\SyscallUtil.h">
+      <Filter>Common\3.Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Win_head\kdbgblock.h">
+      <Filter>Common\4.Win_head</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Win_head\ntos_func_def.h">
+      <Filter>Common\4.Win_head</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Win_head\win10_10586.h">
+      <Filter>Common\4.Win_head</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Win_head\win10_14393.h">
+      <Filter>Common\4.Win_head</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Win_head\win10_15063.h">
+      <Filter>Common\4.Win_head</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Win_head\win7.h">
+      <Filter>Common\4.Win_head</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Win_head\win7_sp1.h">
+      <Filter>Common\4.Win_head</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Win_head\win8_9200.h">
+      <Filter>Common\4.Win_head</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Win_head\win8_9600.h">
+      <Filter>Common\4.Win_head</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\4.Win_head\win_head.h">
+      <Filter>Common\4.Win_head</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\2.Process\CProcess.h">
+      <Filter>Common\2.Process</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterEngine\AttachFilter.h">
+      <Filter>FilterEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterEngine\FltEntry.h">
+      <Filter>FilterEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterEngine\KeyBoardFilter.h">
+      <Filter>FilterEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="InjectionEngine\ApcInject.h">
+      <Filter>InjectionEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="InjectionEngine\HookInject.h">
+      <Filter>InjectionEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="InjectionEngine\InjectionHeader.h">
+      <Filter>InjectionEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="InjectionEngine\MemInject.h">
+      <Filter>InjectionEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="InjectionEngine\PayLoad.h">
+      <Filter>InjectionEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="InjectionEngine\ThreadInject.h">
+      <Filter>InjectionEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="ioctrl.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="FilterEngine\MiniFilter\BaseMiniFlt.h">
+      <Filter>FilterEngine\MiniFilter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Common\2.NetWork\Wsk\TcpClient.h">
+      <Filter>Common\2.NetWork\Wsk</Filter>
+    </None>
+    <None Include="Common\2.NetWork\Wsk\WskHeader.h">
+      <Filter>Common\2.NetWork\Wsk</Filter>
+    </None>
+    <None Include="Common\2.NetWork\Http\HttpClient.h">
+      <Filter>Common\2.NetWork\Http</Filter>
+    </None>
+    <None Include="Common\2.NetWork\Http\HttpHeader.h">
+      <Filter>Common\2.NetWork\Http</Filter>
+    </None>
+    <None Include="Common\2.NetWork\Http\HttpRequest.h">
+      <Filter>Common\2.NetWork\Http</Filter>
+    </None>
+    <None Include="Common\2.NetWork\Http\HttpResponse.h">
+      <Filter>Common\2.NetWork\Http</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="FilterEngine\ReadMe_Filter.txt">
+      <Filter>FilterEngine</Filter>
+    </Text>
+    <Text Include="InjectionEngine\ReadMe_Inject.txt">
+      <Filter>InjectionEngine</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="DrvApp.inf" />
+  </ItemGroup>
+</Project>

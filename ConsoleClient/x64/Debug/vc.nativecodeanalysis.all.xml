@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\froggod\desktop\fgtest\consoleclient\</FILEPATH>
+      <FILENAME>consoleclient.cpp</FILENAME>
+      <LINE>12</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>返回值被忽略: “getchar”。</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\froggod\desktop\fgtest\consoleclient\</FILEPATH>
+      <FILENAME>consoleclient.cpp</FILENAME>
+      <LINE>19</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6273</DEFECTCODE>
+    <DESCRIPTION>传递了一个非整数作为_Param_(2)，而对“printf”的调用需要一个整数，实际类型: “void *”: 如果当前传递的是一个指针值，则应使用 %p。</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\froggod\desktop\fgtest\consoleclient\</FILEPATH>
+      <FILENAME>consoleclient.cpp</FILENAME>
+      <LINE>22</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>返回值被忽略: “getchar”。</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

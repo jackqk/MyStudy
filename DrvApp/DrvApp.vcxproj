@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA697A19-7A2B-4516-9DF7-533AEFB30F87}</ProjectGuid>
+    <TemplateGuid>{dd38f7fc-d7bd-488b-9242-7d8754cde80d}</TemplateGuid>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration>Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">Win32</Platform>
+    <RootNamespace>DrvApp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <TargetVersion>Windows10</TargetVersion>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>WindowsKernelModeDriver10.0</PlatformToolset>
+    <ConfigurationType>Driver</ConfigurationType>
+    <DriverType>WDM</DriverType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <Inf2CatUseLocalTime>true</Inf2CatUseLocalTime>
+    <EnableInf2cat>false</EnableInf2cat>
+    <IncludePath>$(projectdir)StlInclude;$(projectdir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <IncludePath>$(projectdir)StlInclude;$(projectdir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <Inf2CatUseLocalTime>true</Inf2CatUseLocalTime>
+    <IncludePath>$(projectdir)StlInclude;$(projectdir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <Inf2CatUseLocalTime>true</Inf2CatUseLocalTime>
+    <IncludePath>$(projectdir)StlInclude;$(projectdir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <AdditionalDependencies>BufferOverflowK.lib;libcntpr.lib;wdm.lib;wdmsec.lib;aux_klib.lib;ntstrsafe.lib;Netio.lib;tdi.lib;fltMgr.lib;Scsiport.lib;uuid.lib;fwpkclnt.lib;Ndis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <RuntimeLibrary>
+      </RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>BufferOverflowK.lib;libcntpr.lib;wdm.lib;wdmsec.lib;aux_klib.lib;ntstrsafe.lib;Netio.lib;tdi.lib;fltMgr.lib;Scsiport.lib;uuid.lib;fwpkclnt.lib;Ndis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>BufferOverflowK.lib;libcntpr.lib;wdm.lib;wdmsec.lib;aux_klib.lib;ntstrsafe.lib;Netio.lib;tdi.lib;fltMgr.lib;Scsiport.lib;uuid.lib;fwpkclnt.lib;Ndis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+    </Link>
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SupportJustMyCode>false</SupportJustMyCode>
+      <AdditionalOptions>/std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <DisableSpecificWarnings>4505;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ConformanceMode>false</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>BufferOverflowK.lib;libcntpr.lib;wdm.lib;wdmsec.lib;aux_klib.lib;ntstrsafe.lib;Netio.lib;tdi.lib;fltMgr.lib;Scsiport.lib;uuid.lib;fwpkclnt.lib;Ndis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+    </Link>
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Inf Include="DrvApp.inf" />
+  </ItemGroup>
+  <ItemGroup>
+    <FilesToPackage Include="$(TargetPath)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\1.Driver&amp;Device\DriverEntry.cpp" />
+    <ClCompile Include="Common\2.NetWork\Wsk\WskSocket.cpp" />
+    <ClCompile Include="Common\4.Cpp&amp;Stl\kernel_stl.cpp" />
+    <ClCompile Include="Common\4.Cpp&amp;Stl\stdcpp.cpp" />
+    <ClCompile Include="Common\4.Cpp&amp;Stl\typeinfo.cpp" />
+    <ClCompile Include="Common\CommSyscall.cpp" />
+    <ClCompile Include="DispatchRoutine.cpp" />
+    <ClCompile Include="FilterEngine\MiniFilter\BaseMiniFlt.cpp" />
+    <ClCompile Include="FilterEngine\MyFltCode\FltEntry.cpp" />
+    <ClCompile Include="InjectionEngine\PayLoad.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClInclude Include="Common\1.Callback\CExCallback.h" />
+    <ClInclude Include="Common\1.Callback\CImageCallback.h" />
+    <ClInclude Include="Common\1.Callback\CObjectCallback.h" />
+    <ClInclude Include="Common\1.Callback\CPnpCallback.h" />
+    <ClInclude Include="Common\1.Callback\CPowerCallback.h" />
+    <ClInclude Include="Common\1.Callback\CProcessCallback.h" />
+    <ClInclude Include="Common\1.Callback\CRegCallback.h" />
+    <ClInclude Include="Common\1.Callback\CSystemTimeCallback.h" />
+    <ClInclude Include="Common\1.Callback\CThreadCallback.h" />
+    <ClInclude Include="Common\1.Driver&amp;Device\CDevice.h" />
+    <ClInclude Include="Common\1.Driver&amp;Device\CDriver.h" />
+    <ClInclude Include="Common\2.Dpc\CDpc.h" />
+    <ClInclude Include="Common\2.File\CFile.h" />
+    <ClInclude Include="Common\2.NetWork\Wsk\UdpClient.h" />
+    <ClInclude Include="Common\2.NetWork\Wsk\WskSocket.h" />
+    <ClInclude Include="Common\2.Process\CProcess.h" />
+    <ClInclude Include="Common\2.Reg\CReg.h" />
+    <ClInclude Include="Common\2.Thread\CThread.h" />
+    <ClInclude Include="Common\2.Thread\CThreadPlus.h" />
+    <ClInclude Include="Common\2.Timer\CTimer.h" />
+    <ClInclude Include="Common\2.WorkItem\CWorkItem.h" />
+    <ClInclude Include="Common\3.Log\StatusInfo.h" />
+    <ClInclude Include="Common\3.Synchronization\CCpuLock.h" />
+    <ClInclude Include="Common\3.Synchronization\CFGLock.h" />
+    <ClInclude Include="Common\3.Synchronization\CMutex.h" />
+    <ClInclude Include="Common\3.Synchronization\CPushLock.h" />
+    <ClInclude Include="Common\3.Synchronization\CRundownProtect.h" />
+    <ClInclude Include="Common\3.Synchronization\CRWLock.h" />
+    <ClInclude Include="Common\3.Synchronization\CSpinLock.h" />
+    <ClInclude Include="Common\3.Synchronization\CSpinLockMutex.h" />
+    <ClInclude Include="Common\3.Synchronization\event\CEvent.h" />
+    <ClInclude Include="Common\3.Synchronization\event\CKevent.h" />
+    <ClInclude Include="Common\3.Utils\CommonUtil.h" />
+    <ClInclude Include="Common\3.Utils\DbgUtil.h" />
+    <ClInclude Include="Common\3.Utils\GuidUtil.h" />
+    <ClInclude Include="Common\3.Utils\MemUtil.h" />
+    <ClInclude Include="Common\3.Utils\OsVerUtil.h" />
+    <ClInclude Include="Common\3.Utils\PathUtil.h" />
+    <ClInclude Include="Common\3.Utils\PEUtil.h" />
+    <ClInclude Include="Common\3.Utils\TimeUtil.h" />
+    <ClInclude Include="Common\3.Utils\SyscallUtil.h" />
+    <ClInclude Include="Common\4.Cpp&amp;Stl\kernel_stl.h" />
+    <ClInclude Include="Common\4.Cpp&amp;Stl\scope_exit.h" />
+    <ClInclude Include="Common\4.Cpp&amp;Stl\SingleTon.h" />
+    <ClInclude Include="Common\4.Cpp&amp;Stl\stdcpp.h" />
+    <ClInclude Include="Common\4.Cpp&amp;Stl\unique_resource.h" />
+    <ClInclude Include="Common\4.Win_head\kdbgblock.h" />
+    <ClInclude Include="Common\4.Win_head\ntos_func_def.h" />
+    <ClInclude Include="Common\4.Win_head\win10_10586.h" />
+    <ClInclude Include="Common\4.Win_head\win10_14393.h" />
+    <ClInclude Include="Common\4.Win_head\win10_15063.h" />
+    <ClInclude Include="Common\4.Win_head\win7.h" />
+    <ClInclude Include="Common\4.Win_head\win7_sp1.h" />
+    <ClInclude Include="Common\4.Win_head\win8_9200.h" />
+    <ClInclude Include="Common\4.Win_head\win8_9600.h" />
+    <ClInclude Include="Common\4.Win_head\win_head.h" />
+    <ClInclude Include="Common\CommHeader.h" />
+    <ClInclude Include="Common\CommGlobal.h" />
+    <ClInclude Include="Common\CommLib.h" />
+    <ClInclude Include="Common\CommSyscall.h" />
+    <ClInclude Include="FilterEngine\AttachFilter.h" />
+    <ClInclude Include="FilterEngine\FltEntry.h" />
+    <ClInclude Include="FilterEngine\KeyBoardFilter.h" />
+    <ClInclude Include="FilterEngine\MiniFilter\BaseMiniFlt.h" />
+    <ClInclude Include="InjectionEngine\ApcInject.h" />
+    <ClInclude Include="InjectionEngine\HookInject.h" />
+    <ClInclude Include="InjectionEngine\InjectionHeader.h" />
+    <ClInclude Include="InjectionEngine\MemInject.h" />
+    <ClInclude Include="InjectionEngine\PayLoad.h" />
+    <ClInclude Include="InjectionEngine\ThreadInject.h" />
+    <ClInclude Include="ioctrl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Common\2.NetWork\Http\HttpClient.h" />
+    <None Include="Common\2.NetWork\Http\HttpHeader.h" />
+    <None Include="Common\2.NetWork\Http\HttpRequest.h" />
+    <None Include="Common\2.NetWork\Http\HttpResponse.h" />
+    <None Include="Common\2.NetWork\Wsk\TcpClient.h" />
+    <None Include="Common\2.NetWork\Wsk\WskHeader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="FilterEngine\ReadMe_Filter.txt" />
+    <Text Include="InjectionEngine\ReadMe_Inject.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

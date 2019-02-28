@@ -1,0 +1,100 @@
+;;;
+;;; DrvApp
+;;;
+;;;
+;;; Copyright (c) 1999 - 2002, Microsoft Corporation
+;;;
+
+[Version]
+Signature   = "$Windows NT$"							;固定不变
+Class       = "ActivityMonitor"							;https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/file-system-filter-driver-classes-and-class-guids
+ClassGuid   = {b86dff51-a31e-4bac-b3cf-e8cfe75c9fc2}    ;Class和ClassGuid是配对的，看上面的链接即可
+Provider    = %Company%									;随意写
+DriverVer   = 06/16/2007,1.0.0.0						;日期、版本号
+CatalogFile = DrvApp.cat								;驱动名.cat
+
+
+[DestinationDirs]
+DefaultDestDir      = 12
+DrvApp.DriverFiles  = 12	;会将驱动拷贝到%windir%\system32\drivers目录下
+
+;;
+;; SourceSection
+;;
+[SourceDisksNames]
+1 = %DiskId1%,,,
+
+[SourceDisksFiles]
+DrvApp.sys = 1,,
+
+;;
+;; Default install sections
+;;
+
+[DefaultInstall]
+OptionDesc  = %ServiceDescription%
+CopyFiles   = DrvApp.DriverFiles
+
+[DefaultInstall.Services]
+AddService  = %ServiceName%,,DrvApp.Service
+
+;
+; Copy Files
+;
+
+[DrvApp.DriverFiles]
+%DriverName%.sys
+
+
+;;
+;; Default uninstall sections
+;;
+
+[DefaultUninstall]
+DelFiles   = DrvApp.DriverFiles
+
+[DefaultUninstall.Services]
+DelService = %ServiceName%,0x200      ;Ensure service is stopped before deleting
+
+;;
+;; String Section
+;;
+
+[Strings]
+Company                 = "TODO-Set-Provider"			;随意写
+ServiceDescription      = "DrvApp mini-filter driver"	;注册表中Description的值
+ServiceName             = "DrvApp"		;服务名（存在注册表）, net start xxx
+DriverName              = "DrvApp"		;文件名
+DiskId1                 = "DrvApp Device Installation Disk"	;不知道干嘛的，随意写
+
+;Instances specific information.
+DefaultInstance         = "DrvApp Instance"
+Instance1.Name          = "DrvApp Instance"
+Instance1.Altitude      = "370020"
+Instance1.Flags         = 0x0          ; Suppress automatic attachments
+
+;
+; Services Section
+;
+
+[DrvApp.Service]
+DisplayName      = %ServiceName%
+Description      = %ServiceDescription%
+ServiceBinary    = %12%\%DriverName%.sys    ;%windir%\system32\drivers\xxx.sys
+Dependencies     = "FltMgr"
+ServiceType      = 2                        ;SERVICE_FILE_SYSTEM_DRIVER
+StartType        = 3                        ;SERVICE_DEMAND_START
+ErrorControl     = 1                        ;SERVICE_ERROR_NORMAL
+LoadOrderGroup   = "FSFilter Activity Monitor"
+AddReg           = DrvApp.AddRegistry
+
+;
+; Registry Modifications
+;
+
+[DrvApp.AddRegistry]
+HKR,"Instances","DefaultInstance",0x00000000,%DefaultInstance%
+HKR,"Instances\"%Instance1.Name%,"Altitude",0x00000000,%Instance1.Altitude%
+HKR,"Instances\"%Instance1.Name%,"Flags",0x00010001,%Instance1.Flags%
+
+

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="HookEngine">
+      <UniqueIdentifier>{ea424210-4fac-4697-91f9-7febe9dec778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HookEngine\asmjit\base">
+      <UniqueIdentifier>{86aff6ce-5d87-4a22-b7a5-09639fb2511e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HookEngine\asmjit">
+      <UniqueIdentifier>{13e42907-fe57-4c32-a159-9b90ed2f89c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HookEngine\asmjit\x86">
+      <UniqueIdentifier>{07ac7081-03ea-4eda-9029-5aa4a9f20ba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HookEngine\asmtk">
+      <UniqueIdentifier>{455f7df1-8bf2-4108-9abc-ccb8ce01cb66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HookEngine\distorm">
+      <UniqueIdentifier>{545bb78f-f8ad-4952-bd60-ebe8f94a0306}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ConsoleClient.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="nativelib.h" />
+  </ItemGroup>
+</Project>
